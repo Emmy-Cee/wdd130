@@ -23,7 +23,7 @@ cite {
 	display: block;
     text-align: right;
     font-size: smaller;
-    /* font-style: italic; */
+    font-style: italic;
     padding-top: 5px;
     border-top: 1px dotted white;
 
