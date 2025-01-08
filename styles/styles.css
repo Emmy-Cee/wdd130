@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 :root{
     --padding: 1rem;
     --margin: 1rem;
@@ -29,22 +34,20 @@ main {
 }
 
 main img {
-    height:auto;
-    width: 150px;
+    height:100px;
+    width: 80px;
     border: var(--img-border);
     padding: 0.125(var(--padding));
     box-shadow: var(--img-decoration);
+    float: right;
 }
-
 p {
     padding:0px;
 }
 
 aside {
     width: 20rem;
-    padding: var(--padding);
     margin: 5px;
-    border: var(--border);
     background-color: var(--heading-background-color);
     color: var(--heading-text-color);
     text-align: center;
@@ -55,8 +58,23 @@ aside img {
     height: auto;
 }
 
+aside h2{
+    position: absolute;
+    top: 415px;
+    left: 135px;
+}
+
 footer {
     margin-top: var(--margin);
     border-top: 1px dotted black;
     text-align: center;
+}
+
+/* Class selector */
+.box {
+    padding: var(--padding);
+    margin: var(--margin);
+    border: var(--border);
+    background-color: #d45a14ef;
+    color: #120202;
 }
