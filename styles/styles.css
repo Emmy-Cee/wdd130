@@ -1,10 +1,11 @@
 :root{
     --padding: 1rem;
     --margin: 1rem;
-    --heading-background-color: darkblue;
+    --heading-background-color: #1919d7;
     --heading-text-color: #fff;
     --text-color: black;
     --border: 1px solid black;
+    --img-border: 1px solid gray;
     --img-decoration: 0 0 30px gray;
 }
 
@@ -30,7 +31,7 @@ main {
 main img {
     height:auto;
     width: 150px;
-    border: var(--border);
+    border: var(--img-border);
     padding: 0.125(var(--padding));
     box-shadow: var(--img-decoration);
 }
