@@ -1,16 +1,26 @@
+:root{
+    --padding: 1rem;
+    --margin: 1rem;
+    --heading-background-color: darkblue;
+    --heading-text-color: #fff;
+    --text-color: black;
+    --border: 1px solid black;
+    --img-decoration: 0 0 30px gray;
+}
+
 nav{
-    background-color: darkblue;
-    padding:10px;
+    background-color: var(--heading-background-color);
+    padding: var(--padding);
 }
 
 nav a {
-    color:white;
     display: block;
-    padding: 20px;
+    padding: var(--padding);
+    color: var(--heading-text-color);
 }
 
 h1 {
-    color: darkblue
+    color: var(--heading-background-color);
 }
 
 main {
@@ -20,30 +30,32 @@ main {
 main img {
     height:auto;
     width: 150px;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
+    border: var(--border);
+    padding: 0.125(var(--padding));
+    box-shadow: var(--img-decoration);
 }
 
 p {
     padding:0px;
 }
 
-aside{
-    width:20rem;
-    padding: 1rem;
-    margin: 1rem;
-    border: 1px solid gray;  
-    background-color: #0411c8; 
-    color: #fff;
+aside {
+    width: 20rem;
+    padding: var(--padding);
+    margin: 5px;
+    border: var(--border);
+    background-color: var(--heading-background-color);
+    color: var(--heading-text-color);
     text-align: center;
 }
-aside img{
+
+aside img {
     width: 200px;
     height: auto;
 }
-footer{
-    margin-top: 10px;
+
+footer {
+    margin-top: var(--margin);
     border-top: 1px dotted black;
     text-align: center;
 }
