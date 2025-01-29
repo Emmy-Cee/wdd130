@@ -39,6 +39,7 @@ main img {
     border: var(--img-border);
     padding: 0.125(var(--padding));
     box-shadow: var(--img-decoration);
+    
     float: right;
 }
 p {
