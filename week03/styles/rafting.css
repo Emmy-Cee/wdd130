@@ -1,8 +1,9 @@
 :root {
-    --primary-color: #f2d7ee;
-    --secondary-color: #d3bcc0;
-    --accent1-color: #a5668b;
-    --accent2-color: #69306d;
+    --primary-color: #10a5b2;
+    --secondary-color: #b7e3fa;
+    --accent1-color: #f8f6f1;
+    --accent2-color: #eddfa6;
+    --accent3-color: #f7a173;
     --heading-font: 'Roboto', sans-serif;
     --text-font: 'Open Sans', sans-serif;
     --padding: 1rem;
@@ -46,4 +47,26 @@ main h1, h2, p {
     color: black;
 }
 
+.hero{
+    display:block;
+    margin: 1rem auto;
+    width: 100vw;
+}
+
+.hero > img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.hero > h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--primary-color);
+    font-size: 4rem;
+    font-family: var(--heading-font);
+    text-align: center;
+}
 /* Other existing styles */
