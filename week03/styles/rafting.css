@@ -93,10 +93,8 @@ section {
     background-color: var(--accent1-color);
 }
 .adventure {
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center; */
+    display: block;
+    align-items: center;
     margin: 1rem auto;
     width: 100vw;
     background-color: var(--accent1-color);
@@ -110,14 +108,9 @@ section {
 }
 
 .adventure img {
-    /* display: flex;
-    justify-content: space-around;
-    align-items: center; */
-    display: block;
-    float: left;
-    margin: 1rem auto;
     box-shadow: 0 0 10px var(--accent3-color);
     width: 15%;
     height: 200px;
+    margin: 3rem auto;
 }
 /* Other existing styles */
