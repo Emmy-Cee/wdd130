@@ -1,8 +1,8 @@
 header {
     background-color: #333;
     color: #f4f4f4;
-    font-size: 1.5em;
-    padding: 5px;
+    font-size: 1.2em;
+    padding: 10px;
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
@@ -10,7 +10,7 @@ header {
 h1 {
     color: #333;
     font-family: 'Arial', sans-serif;
-    font-size: 2.5em;
+    font-size: 2em;
     text-align: center;
 }
 img {
@@ -18,29 +18,35 @@ img {
     height: auto;
     display: block;
     margin: 0 auto;
+    box-shadow: 10px 10px 10px grey;
+}
+
+main {
+    max-width: 500px;
+    margin: 0 auto;
 }
 section {
     box-sizing: border-box;
-    max-width: 780px;
     background-color: #ccc;
     margin: 20px auto;
     padding: 20px;
+    font-size: 1em;
     font-family: 'Georgia', serif;
-    line-height: 1.6;
-    color: #555;
+    /* line-height: 1.6; */
+    color: black;
 
 }
 section h2 {
-    color: #444;
-    font-size: 2em;
+    color: black;
+    font-size: 1.5em;
     border-bottom: 2px solid #333;
 }
 
 footer {
     background-color: #333;
     color: #f4f4f4;
-    padding: 5px;
-    font-size: 1.5em;
+    padding: 10px;
+    font-size: 1.2em;
     text-align: center;
     margin: 0 auto;
     max-width: 800px;
