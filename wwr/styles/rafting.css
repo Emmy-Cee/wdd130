@@ -23,13 +23,30 @@ header, main, footer {
     margin: 0 auto;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--secondry-color);
+    margin: 0 auto 10px auto;
+    padding: 5px;
+    align-items: center;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    border-radius: 100%;
+    margin: 10px;
+}
+
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+    text-align: center;
 }
 
 h2 {
-    margin-top: 16px;
+    margin-top: 8px;
     margin-bottom: 8px;
     padding: 16px;
     background-color: var(--accent2-color);
@@ -38,8 +55,22 @@ h2 {
 h3 {
     margin: 16px 16px 0 16px;
     padding: 8px 8px 4px 8px;
-    background-color: var(--secondry-color);
-    width: fit-content;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+nav li {
+    list-style-type: none;
+    margin: 0 10px 0 10px;
+    padding: 0 5px 0 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
 }
 
 nav, p, section, article {
@@ -68,13 +99,40 @@ h1 {
     border-radius: 8px;
 }
 
+figure {
+    margin: 16px;
+    padding: 8px;
+    background-color: rgb(170, 170, 170);
+    align-items: center;
+    border-radius: 8px;
+}
+
+figure figcaption{
+    text-align: left;
+    color: #ffff;
+    margin: 5px;
+    padding: 5px;
+    font-weight: smaller;
+    font-style: italic;
+}
+
 footer {
     border-top: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer nav{
+    display: flex;
+    justify-content: space-around;
 }
 
 footer a img {
     width: 32px;
     height: 32px;
+    margin: 5px;
+    padding: 2px;
 }
 
 
@@ -101,5 +159,33 @@ footer a img {
     border-radius: 8px;
 }
 
+.history img{
+    width: 200px;
+    height: auto;
+    align-self: center;
+    padding: 8px;
+}
 
+.history-container {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+}
 
+.story .mission {
+    text-align: left;
+    padding: 8px;
+}
+
+.adventure-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-content: center;
+}
+
+.adventure-container img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    padding: 5px;
+    align-self: center;
+}
