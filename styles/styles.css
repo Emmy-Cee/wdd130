@@ -13,17 +13,35 @@
     --text-color: #333333;
 }
 
+header, .grid, footer {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+}
+
 nav {
+    display: flex;
     background-color: var(--nav-bg-color);
     padding: 10px;
+    list-style: none;
+    justify-content: space-around;
 }
 nav a {
     color: var(--nav-link-color);
     display: block;
     padding: 20px;
+    text-decoration: none;
+    font-weight: bold;
 }
 h1 {
     color: var(--nav-bg-color);
+    border-bottom: 1px solid var(--nav-bg-color);
+    margin: 0 0 1rem 0;
+    padding: 0 0 0.5rem 0;
 }
 main img {
     float: right;
@@ -41,11 +59,13 @@ main {
     margin: 1rem;
     padding: 1rem;
     max-width: 1024px;
+    grid-column: 3/4;
 }
 aside {
     position: relative;
     width: 750px;
     text-align: center;
+    grid-column: 1/2;
 }
 aside h2{
     position: absolute;
@@ -61,7 +81,8 @@ aside img{
     height: auto;
 }
 footer {
-    margin-top: 10px;
+    margin: 10px 0 0 0;
+    padding: 15px;
     border-top: 2px solid #000;
     text-align: center;
 }
@@ -74,4 +95,11 @@ footer {
     background-color: var(--main-bg-color);
     color: var(--text-color);
     clear: both;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: 2 / 3;
 }
