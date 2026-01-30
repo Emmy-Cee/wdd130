@@ -26,7 +26,7 @@ header, main, footer {
 header {
     display: flex;
     justify-content: space-between;
-    background-color: var(--secondry-color);
+    background-color: var(--accent2-color);
     margin: 0 auto 10px auto;
     padding: 5px;
     align-items: center;
@@ -55,6 +55,8 @@ h2 {
 h3 {
     margin: 16px 16px 0 16px;
     padding: 8px 8px 4px 8px;
+    background-color: var(--secondry-color);
+    width: fit-content;
 }
 
 nav ul{
@@ -102,7 +104,7 @@ h1 {
 figure {
     margin: 16px;
     padding: 8px;
-    background-color: rgb(170, 170, 170);
+    background-color: var(--accent1-color);
     align-items: center;
     border-radius: 8px;
 }
@@ -112,8 +114,7 @@ figure figcaption{
     color: #ffff;
     margin: 5px;
     padding: 5px;
-    font-weight: smaller;
-    font-style: italic;
+    font-weight: normal;
 }
 
 footer {
