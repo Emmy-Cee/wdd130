@@ -107,6 +107,7 @@ figure {
     background-color: var(--accent1-color);
     align-items: center;
     border-radius: 8px;
+    color: #ffff;
 }
 
 figure figcaption{
