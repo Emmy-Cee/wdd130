@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Poll Form - Learning Practice</title>
+        <meta name="description" content="This is a practice form for WDD130 class. It is a simple poll form that asks the user for their name, email, favorite browser, and if they have a household pet. It also has a textarea for the user to list the places they have lived.">
+        <meta name="author" content="Emmanuel Anietiee Atat">
+        <link rel="stylesheet" href="styles/poll-form.css">
+    </head>
+    <body>
+        <header>
+            <h1>WDD130 | HTML Form - User Poll</h1>
+        </header>
+        <main>
+            <form>
+                <fieldset class="form">
+                    <legend>Contact Information</legend>
+                    <div class="form-item column2">
+                        <label for="username">Enter your Full name?</label>
+                        <input type="text" name="username" id="username" required>
+                    </div>
+
+                    <div class="form-item column2">
+                        <label for="usermail">Enter your email?</label>
+                        <input type="email" name="usermail" id="usermail" required>
+                    </div>
+                </fieldset>
+
+                <fieldset class="form2">
+                    <legend>Question</legend>
+                    <div class="form-item column1">
+                        <label for="browser">What is your favorite  browser?</label>
+                        <select name="browser" id="browser" required>
+                            <option value="">Choose an option</option>
+                            <option value="chrome">Chrome</option>
+                            <option value="firefox">Firefox</option>
+                            <option value="safari">Safari</option>
+                            <option value="edge">Microsoft Edge</option>
+                        </select>
+                    </div>
+
+                    <div class="form-item column1">
+                        <label for="pet">Do you have a household pet?</label>
+                        <input type="checkbox" name="pet" id="pet">
+                    </div>
+
+                    <div class="form-item">
+                        <label for="feedback">List the places you have lived?</label>
+                        <textarea name="feedback" id="feedback" cols="30" rows="5" placeholder="Johannesburg, Eket, Uyo, Idaho, Utah, ...."></textarea>
+                    </div>
+                </fieldset>
+                
+
+                <button type="submit">Submit Pool</button>
+            </form>
+        </main>
+        <footer>
+            <p>&copy; 2026 | WDD130 - Poll Form | Emmanuel Anietie Atat</p>
+        </footer>
+    </body>
