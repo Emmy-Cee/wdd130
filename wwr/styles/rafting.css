@@ -335,7 +335,7 @@ button:hover {
     align-self: center;
 }
 
-.employee-container legend {
+.employee-container strong {
     font-size: 1.2rem;
     color: black;
     text-align: center;
