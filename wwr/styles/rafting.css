@@ -341,3 +341,141 @@ button:hover {
     text-align: center;
 }
 
+/* ------------Homepage Style-----------  */
+.home-hero img {
+    width: 100%;
+    background:center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.home-hero-txt {
+    font-size: 1rem;
+    position: absolute;
+    text-align: center;
+    top: 150px;
+    left: 400px
+}
+
+
+.home-hero-txt h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2.5rem;
+}
+
+.home-hero-txt p {
+    font-weight: bolder;
+    color: black;
+    margin: 15px 0;
+}
+
+.btn {
+    background: var(--accent2-color);
+    padding: 10px 25px;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* FEATURE CARDS */
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 60px 20px;
+}
+
+.card h3{
+    background: none;
+    margin: 0;
+}
+
+.card img {
+    width: 230px;
+    height: 157px;
+    border: 5px solid #e0c18c;
+}
+
+.card  .icons{
+    margin: 5px 15px 0 15px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    object-fit: contain;
+}
+
+/* INFO SECTION */
+.info-section {
+    background: #e0c18c;
+    padding: 35px;
+    position: relative;
+}
+
+.big-image {
+    width: 70%;
+    border-radius: 5px;
+}
+
+.info-box {
+    position: absolute;
+    right: 35px;
+    top: 63.5%;
+    transform: translateY(-50%);
+    background: #6c735c;
+    color: white;
+    padding: 20px;
+    width: 450px;
+    text-align: center;
+    /* border-radius: 8px; */
+}
+
+.info-box .btn {
+    justify-content: center;
+}
+
+/* NEWSLETTER FORM */
+.newsletter {
+    background-color: var(--accent2-color);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.newsletter h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.newsletter-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 15px;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.newsletter-form label {
+    display: none; /* visually hidden, but still accessible for screen readers */
+}
+
+.newsletter-form input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    font-size: 1rem;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter-form button:hover {
+    background-color: var(--secondry-color);
+}
