@@ -460,7 +460,7 @@ button:hover {
 }
 
 .newsletter-form label {
-    display: none; /* visually hidden, but still accessible for screen readers */
+     display: none; /*visually hidden, but still accessible for screen readers */
 }
 
 .newsletter-form input {
